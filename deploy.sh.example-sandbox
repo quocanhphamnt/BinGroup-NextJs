@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Start deploy..."
+
+pm2_sandbox=oneibccompanycorpnextjs_sandbox
+
+git pull
+yarn
+yarn build
+pm2 restart "$pm2_sandbox"
+
+echo "Deploy successfully!"
+exit 0

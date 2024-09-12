@@ -1,0 +1,77 @@
+{
+  "name": "one-ibc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "eslint:format": "eslint src --fix",
+    "prettier": "prettier --check \"src/app/**/(*.tsx|*.ts|*.css)\"",
+    "prettier:fix": "prettier --write \"src/app/**/(*.tsx|*.ts|*.css)\"",
+    "prepare": "husky",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@react-google-maps/api": "^2.19.3",
+    "@tanstack/react-query": "^5.51.21",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.3",
+    "clean-css": "^5.3.3",
+    "cookies-next": "^4.2.1",
+    "crypto-js": "^4.2.0",
+    "framer-motion": "^11.3.28",
+    "html-react-parser": "^5.1.12",
+    "intl-tel-input": "^18.2.1",
+    "next": "14.2.5",
+    "nextjs-toploader": "^1.6.12",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
+    "react-paginate": "^8.2.0",
+    "react-select": "^5.8.0",
+    "swiper": "^11.1.9",
+    "yup": "^1.4.0",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.2.2",
+    "@tanstack/react-query-devtools": "^5.51.18",
+    "@tanstack/react-query-next-experimental": "^5.51.18",
+    "@types/clean-css": "^4.2.11",
+    "@types/crypto-js": "^4.2.2",
+    "@types/intl-tel-input": "^18.1.2",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20",
+    "@types/nprogress": "^0.2.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.8",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn prettier:fix",
+      "yarn eslint:format"
+    ]
+  }
+}

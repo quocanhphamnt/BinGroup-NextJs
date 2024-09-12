@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "rodrigovallades.es7-react-js-snippets",
+    "esbenp.prettier-vscode",
+    "Huuums.vscode-fast-folder-structure",
+    "EditorConfig.EditorConfig",
+    "eamodio.gitlens"
+  ]
+}

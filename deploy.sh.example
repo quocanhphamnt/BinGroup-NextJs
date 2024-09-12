@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "Start deploy..."
+
+live_server=oneibccompanycorpnextjs
+backup_server=oneibccompanycorpnextjs_bk
+pm2_live=oneibccompanycorpnextjs_live
+pm2_live_bk=oneibccompanycorpnextjs_live_bk
+
+echo "Start deploy backup server..."
+cd "../$backup_server"
+git pull
+yarn
+yarn build
+pm2 restart "$pm2_live_bk"
+
+
+echo "Start deploy live server..."
+cd "../$live_server"
+git pull
+yarn
+yarn build
+pm2 restart "$pm2_live"
+cd "../$backup_server"
+sleep 15
+pm2 stop "$pm2_live_bk"
+
+echo "Deploy successfully!"
+exit 0

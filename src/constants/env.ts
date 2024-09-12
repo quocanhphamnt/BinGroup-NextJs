@@ -1,0 +1,36 @@
+// CONFIG ENVIRONMENT
+export const NEXT_PUBLIC_SITE = process.env.NEXT_PUBLIC_SITE || ''
+
+export const NEXT_PUBLIC_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
+
+export const NEXT_PUBLIC_BASE_API_URL = process.env.NEXT_PUBLIC_BASE_API_URL || ''
+
+export const NEXT_PRIVATE_BASE_API_PUBLIC_KEY = process.env.NEXT_PRIVATE_BASE_API_PUBLIC_KEY || ''
+
+export const NEXT_PUBLIC_S3_STATIC_BASE = process.env.NEXT_PUBLIC_S3_STATIC_BASE || ''
+
+export const NEXT_PUBLIC_DEFAULT_LOCATION = process.env.NEXT_PUBLIC_DEFAULT_LOCATION || ''
+
+export const NEXT_PUBLIC_DEFAULT_LANG = process.env.NEXT_PUBLIC_DEFAULT_LANG || ''
+
+export const NEXT_PUBLIC_DEFAULT_CURRENCY = process.env.NEXT_PUBLIC_DEFAULT_CURRENCY || ''
+
+export const NEXT_PUBLIC_WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL || ''
+
+export const NEXT_PUBLIC_LOAD_META_DATA = process.env.NEXT_PUBLIC_LOAD_META_DATA || ''
+
+export const NEXT_PUBLIC_ENCRYPT_KEY = process.env.NEXT_PUBLIC_ENCRYPT_KEY || ''
+
+export const NEXT_PUBLIC_RECAPTCHA_PROJECT_ID = process.env.NEXT_PUBLIC_RECAPTCHA_PROJECT_ID || ''
+
+export const NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY || ''
+
+export const NEXT_PUBLIC_RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''
+
+export const NEXT_PUBLIC_GOOGLE_GTM = process.env.NEXT_PUBLIC_GOOGLE_GTM || ''
+
+export const NEXT_PUBLIC_SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || ''
+
+export const NEXT_PUBLIC_SITE_EMAIL = process.env.NEXT_PUBLIC_SITE_EMAIL || ''
+
+export const NEXT_PUBLIC_GOOGLE_MAP = process.env.NEXT_PUBLIC_GOOGLE_MAP || ''
